@@ -8,7 +8,6 @@
     }
 
     function onReady(smart)  {    
-      console.log("Id token: " + JSON.stringify(smart.getIdToken()));
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
         var pt = patient.read();

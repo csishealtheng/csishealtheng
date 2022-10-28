@@ -8,6 +8,10 @@
     }
 
     function onReady(smart)  {
+      console.log("FhirUser: " + smart.getFhirUser());
+      console.log("UserType: " + smart.getUserType());
+      console.log("Id token: " + JSON.stringify(smart.getIdToken()));
+      
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
         var pt = patient.read();
